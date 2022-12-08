@@ -1,0 +1,1 @@
+Press Ctrl+Shift+C when a file is selected to copy its path.
