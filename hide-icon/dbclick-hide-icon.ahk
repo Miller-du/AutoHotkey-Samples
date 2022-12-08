@@ -1,18 +1,12 @@
-;双击桌面显示隐藏桌面图标
-
 #Persistent
 CoordMode, Pixel, Screen
 CoordMode, Mouse, Screen
-;~ 桌面Progman|WorkerW
 GroupAdd, Desktop, ahk_class ExploreWClass
 GroupAdd, Desktop, ahk_class WorkerW
 WaitTime := DllCall("GetDoubleClickTime")/1000
-;屏幕左上
 x1:=0
 y1:=0
-;任务栏高度
 WinGetPos,,,, h,ahk_class Shell_TrayWnd
-;屏幕右下
 x2:=A_ScreenWidth
 y2:=A_ScreenHeight-h
 ;OutputDebug %x2%,%y2%
